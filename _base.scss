@@ -1,0 +1,16 @@
+body {
+  background-color: $color-bg-page;
+  padding-top: 40px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
