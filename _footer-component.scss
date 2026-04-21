@@ -25,7 +25,7 @@
       padding-bottom: 84px;
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: $breakpoint-lg) {
       .footer__inner {
         padding: 60px 64px 84px; 
       }
@@ -134,7 +134,7 @@
       padding-bottom: 40px;
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: $breakpoint-lg) {
       .footer__inner {
         padding-left: 80px;
         padding-right: 80px;
@@ -212,7 +212,7 @@
     color: $color-text-copyright;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: #{$breakpoint-lg - 1}) {
     &__inner {
       padding: 0 40px;
     }
@@ -320,7 +320,7 @@
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: #{$breakpoint-md - 1}) {
     margin: 0 16px 20px; 
     width: auto; 
 

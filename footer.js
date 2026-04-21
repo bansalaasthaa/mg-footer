@@ -6,7 +6,7 @@ function initFooterAccordion() {
         if (!title) return;
 
         title.addEventListener('click', () => {
-            if (window.innerWidth <= 1024) {
+            if (window.innerWidth < 992) {
                 col.classList.toggle('is-open');
             
             }

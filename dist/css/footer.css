@@ -61,7 +61,7 @@ a {
   padding-top: 60px;
   padding-bottom: 84px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   .footer__newsletter .footer__inner {
     padding: 60px 64px 84px;
   }
@@ -156,7 +156,7 @@ a {
   padding-top: 58px;
   padding-bottom: 40px;
 }
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   .footer__links .footer__inner {
     padding-left: 80px;
     padding-right: 80px;
@@ -222,7 +222,7 @@ a {
   letter-spacing: -0.005em;
   color: #979797;
 }
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .footer__inner {
     padding: 0 40px;
   }
@@ -308,7 +308,7 @@ a {
     padding: 24px 40px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .footer {
     margin: 0 16px 20px;
     width: auto;
