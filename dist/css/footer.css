@@ -79,7 +79,7 @@ a {
 }
 .footer__newsletter-right {
   flex: 0 0 auto;
-  width: 38%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -88,10 +88,10 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 52px;
+  height: 56px;
   background-color: #292929;
   border-radius: 8px;
-  padding: 0 12px 0 20px;
+  padding: 0 16px 0 24px;
   border: none;
   box-sizing: border-box;
 }
@@ -115,33 +115,32 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px 4px;
+  padding: 0;
   width: 32px;
   height: 32px;
-  background: #292929;
+  background: transparent;
   border-radius: 8px;
   flex-shrink: 0;
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-.footer__newsletter-btn:hover {
-  background: #4d4d4d;
 }
 .footer__newsletter-icon {
   display: block;
-  width: 24px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
 }
 .footer__newsletter-disclaimer {
-  font-size: 13px;
+  font-family: "Inter Tight", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   line-height: 1.6;
   color: #9e9e9e;
+  max-width: none;
 }
 .footer__newsletter-disclaimer a {
   color: #9e9e9e;
   text-decoration: underline;
   text-underline-offset: 2px;
+  font-weight: 500;
 }
 .footer__newsletter-disclaimer a:hover {
   color: #ffffff;
@@ -173,7 +172,7 @@ a {
   line-height: 40px;
   letter-spacing: -0.005em;
   color: #FAFAFA;
-  margin: 0 0 9px 0;
+  margin: 0 0 64px 0;
   white-space: nowrap;
 }
 .footer__col-chevron {
@@ -229,18 +228,31 @@ a {
   .footer__newsletter .footer__inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
+    gap: 40px;
+    padding: 60px 32px;
   }
   .footer__newsletter-heading {
-    font-size: 36px;
-    max-width: 100%;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.24px;
+    max-width: 327px;
+  }
+  .footer__newsletter-form {
+    width: 100%;
+    height: 72px;
+    border-radius: 20px;
+    padding: 0 20px 0 32px;
   }
   .footer__newsletter-right {
     width: 100%;
+  }
+  .footer__newsletter-disclaimer {
+    font-family: "Inter Tight", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    max-width: 500px;
   }
   .footer__col-chevron {
     display: block !important;
@@ -307,6 +319,13 @@ a {
   .footer__bottom {
     padding: 24px 40px;
   }
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 22.75px;
+    letter-spacing: -0.08px;
+    max-width: 286px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -324,9 +343,10 @@ a {
     gap: 24px;
   }
   .footer__newsletter-heading {
-    font-size: 24px;
-    line-height: 1.25;
-    max-width: 300px;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.24px;
+    max-width: 327px;
   }
   .footer__links .footer__inner {
     padding-left: 24px;
@@ -334,10 +354,6 @@ a {
   }
   .footer__bottom {
     padding: 20px 24px;
-  }
-  .footer__copyright {
-    font-size: 12px;
-    line-height: 1.5;
   }
 }
 

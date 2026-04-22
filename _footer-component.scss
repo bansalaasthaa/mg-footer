@@ -45,7 +45,7 @@
 
     &-right {
       flex: 0 0 auto;
-      width: 38%;
+      width: 45%; 
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -55,10 +55,10 @@
       display: flex;
       align-items: center;
       width: 100%;
-      height: 52px;
+      height: 56px;
       background-color: $color-bg-input;
       border-radius: 8px;
-      padding: 0 12px 0 20px;
+      padding: 0 16px 0 24px;
       border: none;
       box-sizing: border-box;
     }
@@ -85,36 +85,34 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6px 4px;
+      padding: 0;
       width: 32px;
       height: 32px;
-      background: $color-bg-input;
+      background: transparent;
       border-radius: 8px;
       flex-shrink: 0;
       border: none;
       cursor: pointer;
-      transition: background-color 0.2s ease;
-
-      &:hover {
-        background: $color-bg-btn-hover;
-      }
     }
 
     &-icon {
       display: block;
-      width: 24px;
-      height: 20px;
+      width: 32px;
+      height: 32px;
     }
 
     &-disclaimer {
-      font-size: 13px;
+      font-family: $font-family-heading;
+      font-size: 20px;
       line-height: 1.6;
       color: $color-text-disclaimer;
+      max-width: none; 
 
       a {
         color: $color-text-disclaimer;
         text-decoration: underline;
         text-underline-offset: 2px;
+        font-weight: 500;
 
         &:hover {
           color: $color-text-white;
@@ -153,7 +151,7 @@
       line-height: 40px;
       letter-spacing: -0.005em;
       color: $color-text-title;
-      margin: 0 0 9px 0;
+      margin: 0 0 64px 0;
       white-space: nowrap;
     }
 
@@ -233,8 +231,24 @@
         max-width: 100%;
       }
 
+      &-form {
+        width: 100%;
+        height: 72px;
+        border-radius: 20px;
+        padding: 0 20px 0 32px;
+      }
+
       &-right {
         width: 100%;
+      }
+
+      &-disclaimer {
+        font-family: $font-family-heading;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: -0.1px;
+        max-width: 500px;
       }
     }
 
@@ -318,6 +332,14 @@
     &__bottom {
       padding: 24px 40px;
     }
+
+    &__copyright {
+      font-size: 14px;
+      line-height: 22.75px;
+      letter-spacing: -0.08px;
+      max-width: 286px;
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: #{$breakpoint-md - 1}) {
@@ -353,11 +375,6 @@
 
     &__bottom {
       padding: 20px 24px;
-    }
-
-    &__copyright {
-      font-size: 12px;
-      line-height: 1.5;
     }
   }
 }
